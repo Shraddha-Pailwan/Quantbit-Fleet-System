@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-02-07 17:31:01.740813",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series_section",
+  "naming_series",
+  "expense_information_section",
+  "vehicle",
+  "expense_date",
+  "expense_category",
+  "odometer_reading",
+  "column_break_wluu",
+  "vendor",
+  "description",
+  "amount_and_billing_section",
+  "amount",
+  "column_break_vpws",
+  "invoice__bill_number",
+  "payment_and_approval_section",
+  "payment_status",
+  "column_break_kpav",
+  "approved_by",
+  "remarks_and_attachments_section",
+  "remarks",
+  "attachments"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "naming_series_section",
+   "fieldtype": "Section Break",
+   "label": "Naming Series"
+  },
+  {
+   "default": "VE-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "VE-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "expense_information_section",
+   "fieldtype": "Section Break",
+   "label": "Expense Information"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicle Master"
+  },
+  {
+   "default": "Today",
+   "fieldname": "expense_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expense Date"
+  },
+  {
+   "fieldname": "expense_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Expense Category",
+   "options": "Expense Category Master"
+  },
+  {
+   "fieldname": "odometer_reading",
+   "fieldtype": "Float",
+   "label": "Odometer Reading",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_wluu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "label": "Vendor",
+   "options": "Vendor Master"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "amount_and_billing_section",
+   "fieldtype": "Section Break",
+   "label": "Amount and Billing"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_vpws",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice__bill_number",
+   "fieldtype": "Data",
+   "label": "Invoice / Bill Number"
+  },
+  {
+   "fieldname": "payment_and_approval_section",
+   "fieldtype": "Section Break",
+   "label": "Payment and Approval"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Cash\nUPI\nBank Transfer\nCheque\nCompany Account"
+  },
+  {
+   "fieldname": "column_break_kpav",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "remarks_and_attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks and Attachments"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Attach",
+   "label": "Attachments"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-07 17:38:06.271588",
+ "modified_by": "Administrator",
+ "module": "Quantbit Fleet System",
+ "name": "Vehicle Expense",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

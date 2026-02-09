@@ -1,0 +1,224 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-02-07 17:39:21.278437",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series_section",
+  "naming_series",
+  "maintenance_information_section",
+  "vehicle",
+  "maintenance_type",
+  "maintenance_mode",
+  "column_break_uzuc",
+  "odometer_reading",
+  "service_provider",
+  "service_date",
+  "work_and_parts_details_section",
+  "work_description",
+  "column_break_vngq",
+  "parts_replaced",
+  "cost_details_section",
+  "labor_charges",
+  "total_cost",
+  "column_break_fbed",
+  "parts_cost",
+  "next_service_details_section",
+  "next_service_date",
+  "column_break_oelb",
+  "next_service_odometer",
+  "billing_and_status_section",
+  "invoice_number",
+  "column_break_ganh",
+  "status",
+  "column_break_oqkz",
+  "downtime"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "naming_series_section",
+   "fieldtype": "Section Break",
+   "label": "Naming Series"
+  },
+  {
+   "default": "MR-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "MR-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "maintenance_information_section",
+   "fieldtype": "Section Break",
+   "label": "Maintenance Information"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicle Master"
+  },
+  {
+   "fieldname": "maintenance_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Maintenance Type",
+   "options": "Maintenance Type Master"
+  },
+  {
+   "default": "Scheduled",
+   "fieldname": "maintenance_mode",
+   "fieldtype": "Select",
+   "label": "Maintenance Mode",
+   "options": "Scheduled\nUnscheduled"
+  },
+  {
+   "fieldname": "column_break_uzuc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "odometer_reading",
+   "fieldtype": "Float",
+   "label": "Odometer Reading",
+   "precision": "2"
+  },
+  {
+   "fieldname": "service_provider",
+   "fieldtype": "Link",
+   "label": "Service Provider",
+   "options": "Vendor Master"
+  },
+  {
+   "default": "Today",
+   "fieldname": "service_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Service Date"
+  },
+  {
+   "fieldname": "work_and_parts_details_section",
+   "fieldtype": "Section Break",
+   "label": "Work and Parts Details"
+  },
+  {
+   "fieldname": "work_description",
+   "fieldtype": "Small Text",
+   "label": "Work Description"
+  },
+  {
+   "fieldname": "column_break_vngq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "parts_replaced",
+   "fieldtype": "Small Text",
+   "label": "Parts Replaced"
+  },
+  {
+   "fieldname": "cost_details_section",
+   "fieldtype": "Section Break",
+   "label": "Cost Details"
+  },
+  {
+   "fieldname": "labor_charges",
+   "fieldtype": "Currency",
+   "label": "Labor Charges"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fbed",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "parts_cost",
+   "fieldtype": "Currency",
+   "label": "Parts Cost"
+  },
+  {
+   "fieldname": "next_service_details_section",
+   "fieldtype": "Section Break",
+   "label": "Next Service Details"
+  },
+  {
+   "fieldname": "next_service_date",
+   "fieldtype": "Date",
+   "label": "Next Service Date"
+  },
+  {
+   "fieldname": "column_break_oelb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "next_service_odometer",
+   "fieldtype": "Float",
+   "label": "Next Service Odometer"
+  },
+  {
+   "fieldname": "billing_and_status_section",
+   "fieldtype": "Section Break",
+   "label": "Billing and Status"
+  },
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Data",
+   "label": "Invoice Number"
+  },
+  {
+   "fieldname": "column_break_ganh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Scheduled\nIn Progress\nCompleted"
+  },
+  {
+   "fieldname": "column_break_oqkz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "downtime",
+   "fieldtype": "Data",
+   "label": "Downtime"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-07 17:48:06.387110",
+ "modified_by": "Administrator",
+ "module": "Quantbit Fleet System",
+ "name": "Maintenance Record",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

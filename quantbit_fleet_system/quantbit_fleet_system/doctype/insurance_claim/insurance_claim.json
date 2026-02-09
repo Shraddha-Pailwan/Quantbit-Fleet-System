@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-02-07 18:01:46.645583",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series_section",
+  "naming_series",
+  "claim_information_section",
+  "policy",
+  "vehicle",
+  "driver",
+  "column_break_jmcv",
+  "incident_date",
+  "claim_date",
+  "claim_details_section",
+  "claim_type",
+  "column_break_eggi",
+  "claim_amount",
+  "column_break_lcxu",
+  "approved_amount",
+  "settlement_information_section",
+  "settlement_date",
+  "column_break_scub",
+  "claim_status",
+  "description_and_documents_section",
+  "description",
+  "documents"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "naming_series_section",
+   "fieldtype": "Section Break",
+   "label": "Naming Series"
+  },
+  {
+   "default": "IC-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "IC-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "claim_information_section",
+   "fieldtype": "Section Break",
+   "label": "Claim Information"
+  },
+  {
+   "fieldname": "policy",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Policy",
+   "options": "Insurance Policy"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicle Master"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver Master"
+  },
+  {
+   "fieldname": "column_break_jmcv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "incident_date",
+   "fieldtype": "Date",
+   "label": "Incident Date"
+  },
+  {
+   "default": "Today",
+   "fieldname": "claim_date",
+   "fieldtype": "Date",
+   "label": "Claim Date"
+  },
+  {
+   "fieldname": "claim_details_section",
+   "fieldtype": "Section Break",
+   "label": "Claim Details"
+  },
+  {
+   "fieldname": "claim_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Claim Type",
+   "options": "Accident\nTheft\nNatural Disaster"
+  },
+  {
+   "fieldname": "column_break_eggi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "claim_amount",
+   "fieldtype": "Currency",
+   "label": "Claim Amount"
+  },
+  {
+   "fieldname": "column_break_lcxu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_amount",
+   "fieldtype": "Currency",
+   "label": "Approved Amount"
+  },
+  {
+   "fieldname": "settlement_information_section",
+   "fieldtype": "Section Break",
+   "label": "Settlement Information"
+  },
+  {
+   "fieldname": "settlement_date",
+   "fieldtype": "Date",
+   "label": "Settlement Date"
+  },
+  {
+   "fieldname": "column_break_scub",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Filed",
+   "fieldname": "claim_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Claim Status",
+   "options": "Filed\nUnder Review\nApproved\nRejected\nSettled"
+  },
+  {
+   "fieldname": "description_and_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Description and Documents"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Attach",
+   "label": "Documents"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-07 18:07:39.460438",
+ "modified_by": "Administrator",
+ "module": "Quantbit Fleet System",
+ "name": "Insurance Claim",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

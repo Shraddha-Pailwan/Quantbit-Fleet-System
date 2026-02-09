@@ -1,0 +1,220 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-02-07 16:48:33.384380",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series_section",
+  "naming_series",
+  "trip_information_section",
+  "vehicle",
+  "start_location",
+  "start_time",
+  "column_break_fcym",
+  "driver",
+  "end_location",
+  "end_time",
+  "column_break_xlnj",
+  "trip_date",
+  "odometer_and_distance_section",
+  "starting_odometer",
+  "column_break_puae",
+  "ending_odometer",
+  "column_break_ikuo",
+  "distance_traveled_km",
+  "trip_purpose_and_route_section",
+  "trip_purpose",
+  "route_details",
+  "passengers_and_fuel_section",
+  "passengers",
+  "column_break_apgz",
+  "fuel_consumed_litres",
+  "status_and_remarks_section",
+  "trip_status",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "naming_series_section",
+   "fieldtype": "Section Break",
+   "label": "Naming Series"
+  },
+  {
+   "default": "TR-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "TR-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "trip_information_section",
+   "fieldtype": "Section Break",
+   "label": "Trip Information"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle Master"
+  },
+  {
+   "fieldname": "start_location",
+   "fieldtype": "Data",
+   "label": "Start Location"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "column_break_fcym",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Driver",
+   "options": "Driver Master"
+  },
+  {
+   "fieldname": "end_location",
+   "fieldtype": "Data",
+   "label": "End Location"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "column_break_xlnj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "trip_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Trip Date"
+  },
+  {
+   "fieldname": "odometer_and_distance_section",
+   "fieldtype": "Section Break",
+   "label": "Odometer and Distance"
+  },
+  {
+   "fieldname": "starting_odometer",
+   "fieldtype": "Float",
+   "label": "Starting Odometer",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_puae",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ending_odometer",
+   "fieldtype": "Float",
+   "label": "Ending Odometer",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_ikuo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "distance_traveled_km",
+   "fieldtype": "Float",
+   "label": "Distance Traveled (KM)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "trip_purpose_and_route_section",
+   "fieldtype": "Section Break",
+   "label": "Trip Purpose and Route"
+  },
+  {
+   "fieldname": "trip_purpose",
+   "fieldtype": "Data",
+   "label": "Trip Purpose"
+  },
+  {
+   "fieldname": "route_details",
+   "fieldtype": "Small Text",
+   "label": "Route Details"
+  },
+  {
+   "fieldname": "passengers_and_fuel_section",
+   "fieldtype": "Section Break",
+   "label": "Passengers and Fuel"
+  },
+  {
+   "fieldname": "passengers",
+   "fieldtype": "Int",
+   "label": "Passengers"
+  },
+  {
+   "fieldname": "column_break_apgz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fuel_consumed_litres",
+   "fieldtype": "Float",
+   "label": "Fuel Consumed (Litres)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "status_and_remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Status and Remarks"
+  },
+  {
+   "default": "Planned",
+   "fieldname": "trip_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Trip Status",
+   "options": "Planned\nOngoing\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-07 17:16:50.307788",
+ "modified_by": "Administrator",
+ "module": "Quantbit Fleet System",
+ "name": "Trip Log",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

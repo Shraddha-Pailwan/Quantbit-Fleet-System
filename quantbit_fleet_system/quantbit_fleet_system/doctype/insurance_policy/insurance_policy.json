@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-02-07 17:49:58.042042",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series_section",
+  "naming_series",
+  "policy_information_section",
+  "vehicle",
+  "insurance_company",
+  "start_date",
+  "column_break_fxom",
+  "policy_number",
+  "policy_type",
+  "end_date",
+  "coverage_and_premium_section",
+  "coverage_amount",
+  "column_break_azwm",
+  "payment_frequency",
+  "column_break_wrba",
+  "deductible_amount",
+  "coverage_details_section",
+  "coverage_details",
+  "payment_and_renewal_section",
+  "payment_status",
+  "column_break_izem",
+  "renewal_reminder_days",
+  "documents_section",
+  "policy_document"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "naming_series_section",
+   "fieldtype": "Section Break",
+   "label": "Naming Series"
+  },
+  {
+   "default": "IP-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "IP-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "policy_information_section",
+   "fieldtype": "Section Break",
+   "label": "Policy Information"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicle Master"
+  },
+  {
+   "fieldname": "insurance_company",
+   "fieldtype": "Link",
+   "label": "Insurance Company",
+   "options": "Vendor Master"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "column_break_fxom",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "policy_number",
+   "fieldtype": "Data",
+   "label": "Policy Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "policy_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Policy Type",
+   "options": "Insurance Type Master"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "coverage_and_premium_section",
+   "fieldtype": "Section Break",
+   "label": "Coverage and Premium"
+  },
+  {
+   "fieldname": "coverage_amount",
+   "fieldtype": "Currency",
+   "label": "Coverage Amount"
+  },
+  {
+   "fieldname": "column_break_azwm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Annual",
+   "fieldname": "payment_frequency",
+   "fieldtype": "Select",
+   "label": "Payment Frequency",
+   "options": "Annual\nSemi-annual\nQuarterly"
+  },
+  {
+   "fieldname": "column_break_wrba",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deductible_amount",
+   "fieldtype": "Currency",
+   "label": "Deductible Amount"
+  },
+  {
+   "fieldname": "coverage_details_section",
+   "fieldtype": "Section Break",
+   "label": "Coverage Details"
+  },
+  {
+   "fieldname": "coverage_details",
+   "fieldtype": "Small Text",
+   "label": "Coverage Details"
+  },
+  {
+   "fieldname": "payment_and_renewal_section",
+   "fieldtype": "Section Break",
+   "label": "Payment and Renewal"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payment Status",
+   "options": "Pending\nPaid\nOverdue"
+  },
+  {
+   "fieldname": "column_break_izem",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "30",
+   "fieldname": "renewal_reminder_days",
+   "fieldtype": "Int",
+   "label": "Renewal Reminder Days"
+  },
+  {
+   "fieldname": "documents_section",
+   "fieldtype": "Section Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "policy_document",
+   "fieldtype": "Attach",
+   "label": "Policy Document"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-07 17:58:17.894118",
+ "modified_by": "Administrator",
+ "module": "Quantbit Fleet System",
+ "name": "Insurance Policy",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

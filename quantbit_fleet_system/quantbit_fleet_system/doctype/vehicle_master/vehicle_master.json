@@ -1,0 +1,217 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-02-07 15:06:04.454661",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_yens",
+  "naming_series",
+  "basic_information_section",
+  "registration_number",
+  "vehicle_type",
+  "column_break_mmqf",
+  "make_and_model",
+  "year_of_manufacture",
+  "technical_details_section",
+  "engine_number",
+  "color",
+  "column_break_cxbv",
+  "fuel_type",
+  "chassis_number",
+  "purchase_and_capacity_section_break",
+  "purchase_date",
+  "purchase_price",
+  "current_odometer_reading_km",
+  "column_break_jrya",
+  "fuel_tank_capacity_litres",
+  "seating_capacity",
+  "assignment_and_status_section_break",
+  "ownership_type",
+  "department",
+  "column_break_sxkt",
+  "status",
+  "branch"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_yens",
+   "fieldtype": "Section Break",
+   "label": "Naming Series"
+  },
+  {
+   "default": "VM-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "VM-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "basic_information_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "registration_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Registration Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "vehicle_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Vehicle Type",
+   "options": "Car\nTruck\nVan\nMotorcycle"
+  },
+  {
+   "fieldname": "column_break_mmqf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "make_and_model",
+   "fieldtype": "Data",
+   "label": "Make & Model",
+   "length": 140
+  },
+  {
+   "fieldname": "year_of_manufacture",
+   "fieldtype": "Int",
+   "label": "Year of Manufacture"
+  },
+  {
+   "fieldname": "technical_details_section",
+   "fieldtype": "Section Break",
+   "label": "Technical Details"
+  },
+  {
+   "fieldname": "engine_number",
+   "fieldtype": "Data",
+   "label": "Engine Number"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "column_break_cxbv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "label": "Fuel Type",
+   "options": "Petrol\nDiesel\nElectric\nHybrid"
+  },
+  {
+   "fieldname": "chassis_number",
+   "fieldtype": "Data",
+   "label": "Chassis Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "purchase_and_capacity_section_break",
+   "fieldtype": "Section Break",
+   "label": "Purchase & Capacity"
+  },
+  {
+   "fieldname": "purchase_date",
+   "fieldtype": "Date",
+   "label": "Purchase Date"
+  },
+  {
+   "fieldname": "purchase_price",
+   "fieldtype": "Currency",
+   "label": "Purchase Price",
+   "options": "Company:default_currency"
+  },
+  {
+   "fieldname": "current_odometer_reading_km",
+   "fieldtype": "Float",
+   "label": "Current Odometer Reading (KM)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_jrya",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fuel_tank_capacity_litres",
+   "fieldtype": "Float",
+   "label": "Fuel Tank Capacity (Litres)"
+  },
+  {
+   "fieldname": "seating_capacity",
+   "fieldtype": "Int",
+   "label": "Seating Capacity"
+  },
+  {
+   "fieldname": "assignment_and_status_section_break",
+   "fieldtype": "Section Break",
+   "label": "Assignment & Status"
+  },
+  {
+   "fieldname": "ownership_type",
+   "fieldtype": "Select",
+   "label": "Ownership Type",
+   "options": "Owned\nLeased\nRented"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_sxkt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nUnder Maintenance\nDecommissioned"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-07 16:07:42.294034",
+ "modified_by": "Administrator",
+ "module": "Quantbit Fleet System",
+ "name": "Vehicle Master",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
