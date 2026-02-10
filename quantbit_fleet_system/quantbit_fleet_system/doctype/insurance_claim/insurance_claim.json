@@ -9,12 +9,15 @@
   "naming_series_section",
   "naming_series",
   "claim_information_section",
+  "company",
   "policy",
   "vehicle",
   "driver",
   "column_break_jmcv",
+  "posting_date",
   "incident_date",
   "claim_date",
+  "driver_name",
   "claim_details_section",
   "claim_type",
   "column_break_eggi",
@@ -27,7 +30,7 @@
   "claim_status",
   "description_and_documents_section",
   "description",
-  "documents"
+  "amended_from"
  ],
  "fields": [
   {
@@ -53,20 +56,23 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Policy",
-   "options": "Insurance Policy"
+   "options": "Insurance Policy",
+   "reqd": 1
   },
   {
    "fieldname": "vehicle",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Vehicle",
-   "options": "Vehicle Master"
+   "options": "Vehicle Master",
+   "reqd": 1
   },
   {
    "fieldname": "driver",
    "fieldtype": "Link",
    "label": "Driver",
-   "options": "Driver Master"
+   "options": "Driver Master",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_jmcv",
@@ -136,6 +142,7 @@
    "options": "Filed\nUnder Review\nApproved\nRejected\nSettled"
   },
   {
+   "collapsible": 1,
    "fieldname": "description_and_documents_section",
    "fieldtype": "Section Break",
    "label": "Description and Documents"
@@ -146,15 +153,41 @@
    "label": "Description"
   },
   {
-   "fieldname": "documents",
-   "fieldtype": "Attach",
-   "label": "Documents"
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "driver.full_name",
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Insurance Claim",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2026-02-07 18:07:39.460438",
+ "modified": "2026-02-10 12:51:29.056705",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Insurance Claim",
@@ -178,6 +211,27 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
+ "states": [
+  {
+   "color": "Gray",
+   "title": "Filed"
+  },
+  {
+   "color": "Orange",
+   "title": "Under Review"
+  },
+  {
+   "color": "Green",
+   "title": "Approved"
+  },
+  {
+   "color": "Red",
+   "title": "Rejected"
+  },
+  {
+   "color": "Light Blue",
+   "title": "Settled"
+  }
+ ],
  "track_changes": 1
 }

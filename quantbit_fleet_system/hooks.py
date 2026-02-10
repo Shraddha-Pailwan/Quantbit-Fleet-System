@@ -247,3 +247,32 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+# scheduler_events = {
+#     "daily": [
+#         "quantbit_fleet_system.scheduler.insurance_policy.update_insurance_policy_status"
+#     ],
+#     # "daily": [
+#     #     "quantbit_fleet_system.tasks.update_incomplete_plans"
+#     # ]
+# }
+
+fixtures = [
+    {
+        "doctype": "Role",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Fleet Manager Admin",
+                    "Fleet User",
+                ]
+            ]
+        ]
+    },
+    {
+        "dt": "Workspace",
+        "filters": [["module", "=", "Quantbit Fleet System"]]
+    }
+]
+

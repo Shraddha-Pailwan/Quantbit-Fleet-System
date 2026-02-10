@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestVendorMaster(FrappeTestCase):
+class TestTripRequest(FrappeTestCase):
 	pass

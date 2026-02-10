@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class FinePenaltyRecord(Document):
+class ExpenseCategoryAccount(Document):
 	pass

@@ -42,7 +42,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Maintenance Type",
-   "options": "Routine Service\nOil Change\nTire Replacement\nBrake Service\nBattery\nAC Service"
+   "options": "Routine Service\nOil Change\nTire Replacement\nBrake Service\nBattery\nAC Service\nOther"
   },
   {
    "fieldname": "service_code",
@@ -90,7 +90,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-07 16:35:42.398033",
+ "modified": "2026-02-09 17:03:02.485810",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Maintenance Type Master",

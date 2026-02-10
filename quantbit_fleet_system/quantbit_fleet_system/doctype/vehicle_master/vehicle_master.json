@@ -1,13 +1,11 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "naming_series:",
+ "autoname": "field:registration_number",
  "creation": "2026-02-07 15:06:04.454661",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_yens",
-  "naming_series",
   "basic_information_section",
   "registration_number",
   "vehicle_type",
@@ -36,19 +34,6 @@
  ],
  "fields": [
   {
-   "collapsible": 1,
-   "fieldname": "section_break_yens",
-   "fieldtype": "Section Break",
-   "label": "Naming Series"
-  },
-  {
-   "default": "VM-.YYYY.-.#####",
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "label": "Naming Series",
-   "options": "VM-.YYYY.-.#####"
-  },
-  {
    "fieldname": "basic_information_section",
    "fieldtype": "Section Break",
    "label": "Basic Information"
@@ -58,6 +43,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Registration Number",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -188,11 +174,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-07 16:07:42.294034",
+ "modified": "2026-02-09 16:08:17.695586",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Vehicle Master",
- "naming_rule": "By \"Naming Series\" field",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -210,8 +196,23 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "search_fields": "registration_number",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
+ "states": [
+  {
+   "color": "Green",
+   "title": "Active"
+  },
+  {
+   "color": "Orange",
+   "title": "Under Maintenance"
+  },
+  {
+   "color": "Red",
+   "title": "Decommissioned"
+  }
+ ],
+ "title_field": "registration_number",
  "track_changes": 1
 }

@@ -25,11 +25,9 @@
   "coverage_details_section",
   "coverage_details",
   "payment_and_renewal_section",
-  "payment_status",
+  "policy_status",
   "column_break_izem",
-  "renewal_reminder_days",
-  "documents_section",
-  "policy_document"
+  "renewal_reminder_days"
  ],
  "fields": [
   {
@@ -55,17 +53,17 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Vehicle",
-   "options": "Vehicle Master"
+   "options": "Vehicle Master",
+   "reqd": 1
   },
   {
    "fieldname": "insurance_company",
-   "fieldtype": "Link",
-   "label": "Insurance Company",
-   "options": "Vendor Master"
+   "fieldtype": "Data",
+   "label": "Insurance Company"
   },
   {
    "fieldname": "start_date",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "Start Date"
   },
   {
@@ -76,6 +74,7 @@
    "fieldname": "policy_number",
    "fieldtype": "Data",
    "label": "Policy Number",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -87,7 +86,7 @@
   },
   {
    "fieldname": "end_date",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "End Date"
   },
   {
@@ -121,6 +120,7 @@
    "label": "Deductible Amount"
   },
   {
+   "collapsible": 1,
    "fieldname": "coverage_details_section",
    "fieldtype": "Section Break",
    "label": "Coverage Details"
@@ -136,14 +136,6 @@
    "label": "Payment and Renewal"
   },
   {
-   "default": "Pending",
-   "fieldname": "payment_status",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Payment Status",
-   "options": "Pending\nPaid\nOverdue"
-  },
-  {
    "fieldname": "column_break_izem",
    "fieldtype": "Column Break"
   },
@@ -154,23 +146,22 @@
    "label": "Renewal Reminder Days"
   },
   {
-   "fieldname": "documents_section",
-   "fieldtype": "Section Break",
-   "label": "Documents"
-  },
-  {
-   "fieldname": "policy_document",
-   "fieldtype": "Attach",
-   "label": "Policy Document"
+   "default": "Insured",
+   "fieldname": "policy_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Policy Status",
+   "options": "Insured\nDue\nExpired"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-07 17:58:17.894118",
+ "modified": "2026-02-09 17:08:06.953821",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Insurance Policy",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -188,8 +179,23 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "search_fields": "vehicle",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
+ "states": [
+  {
+   "color": "Light Blue",
+   "title": "Insured"
+  },
+  {
+   "color": "Orange",
+   "title": "Due"
+  },
+  {
+   "color": "Red",
+   "title": "Expired"
+  }
+ ],
+ "title_field": "vehicle",
  "track_changes": 1
 }

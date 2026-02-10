@@ -13,9 +13,10 @@
   "maintenance_type",
   "maintenance_mode",
   "column_break_uzuc",
-  "odometer_reading",
+  "posting_date",
   "service_provider",
   "service_date",
+  "odometer_reading",
   "work_and_parts_details_section",
   "work_description",
   "column_break_vngq",
@@ -60,7 +61,8 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Vehicle",
-   "options": "Vehicle Master"
+   "options": "Vehicle Master",
+   "reqd": 1
   },
   {
    "fieldname": "maintenance_type",
@@ -88,9 +90,8 @@
   },
   {
    "fieldname": "service_provider",
-   "fieldtype": "Link",
-   "label": "Service Provider",
-   "options": "Vendor Master"
+   "fieldtype": "Data",
+   "label": "Service Provider"
   },
   {
    "default": "Today",
@@ -100,6 +101,7 @@
    "label": "Service Date"
   },
   {
+   "collapsible": 1,
    "fieldname": "work_and_parts_details_section",
    "fieldtype": "Section Break",
    "label": "Work and Parts Details"
@@ -190,12 +192,19 @@
    "fieldname": "downtime",
    "fieldtype": "Data",
    "label": "Downtime"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2026-02-07 17:48:06.387110",
+ "modified": "2026-02-09 17:04:31.260667",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Maintenance Record",
@@ -219,6 +228,19 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
+ "states": [
+  {
+   "color": "Gray",
+   "title": "Scheduled"
+  },
+  {
+   "color": "Yellow",
+   "title": "In Progress"
+  },
+  {
+   "color": "Blue",
+   "title": "Completed"
+  }
+ ],
  "track_changes": 1
 }

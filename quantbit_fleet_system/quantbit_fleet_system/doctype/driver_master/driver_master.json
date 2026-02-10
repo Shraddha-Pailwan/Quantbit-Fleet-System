@@ -29,11 +29,7 @@
   "emergency_contact_section",
   "emergency_contact_name",
   "column_break_kgbd",
-  "emergency_contact_number",
-  "status_and_profile",
-  "profile_photo",
-  "column_break_vlzx",
-  "status"
+  "emergency_contact_number"
  ],
  "fields": [
   {
@@ -52,7 +48,8 @@
    "fieldname": "full_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Full Name"
+   "label": "Full Name",
+   "reqd": 1
   },
   {
    "fieldname": "employee_id",
@@ -142,24 +139,6 @@
    "options": "Phone"
   },
   {
-   "fieldname": "status_and_profile",
-   "fieldtype": "Section Break",
-   "label": "Status & Profile"
-  },
-  {
-   "default": "Active",
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Status",
-   "options": "Active\nInactive\nSuspended"
-  },
-  {
-   "fieldname": "profile_photo",
-   "fieldtype": "Attach Image",
-   "label": "Profile Photo"
-  },
-  {
    "collapsible": 1,
    "fieldname": "section_break_tahx",
    "fieldtype": "Section Break",
@@ -180,16 +159,12 @@
   {
    "fieldname": "column_break_kgbd",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_vlzx",
-   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-07 16:04:28.846298",
+ "modified": "2026-02-09 16:09:48.845812",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Driver Master",
@@ -211,8 +186,10 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "search_fields": "full_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "full_name",
  "track_changes": 1
 }

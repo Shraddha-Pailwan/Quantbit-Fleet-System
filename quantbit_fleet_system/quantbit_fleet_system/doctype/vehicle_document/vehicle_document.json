@@ -9,10 +9,12 @@
   "naming_series_section",
   "naming_series",
   "document_information_section",
+  "company",
   "vehicle",
+  "column_break_ftyf",
   "document_type",
   "document_number",
-  "column_break_ftyf",
+  "column_break_kvtg",
   "issue_date",
   "expiry_date",
   "authority_and_renewal_section",
@@ -20,9 +22,7 @@
   "column_break_iswc",
   "renewal_reminder_days",
   "document_and_status_section",
-  "status",
-  "column_break_vdty",
-  "document_scan"
+  "status"
  ],
  "fields": [
   {
@@ -94,17 +94,13 @@
    "label": "Document and Status"
   },
   {
-   "fieldname": "document_scan",
-   "fieldtype": "Attach",
-   "label": "Document Scan"
-  },
-  {
    "default": "Valid",
    "fieldname": "status",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
-   "options": "Valid\nExpired\nPending Renewal"
+   "options": "Valid\nExpired\nPending Renewal",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_ftyf",
@@ -115,14 +111,20 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "column_break_vdty",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_kvtg",
    "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-07 18:15:09.042656",
+ "modified": "2026-02-10 10:02:13.286795",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Vehicle Document",
@@ -146,6 +148,19 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
+ "states": [
+  {
+   "color": "Green",
+   "title": "Valid"
+  },
+  {
+   "color": "Red",
+   "title": "Expired"
+  },
+  {
+   "color": "Yellow",
+   "title": "Pending"
+  }
+ ],
  "track_changes": 1
 }

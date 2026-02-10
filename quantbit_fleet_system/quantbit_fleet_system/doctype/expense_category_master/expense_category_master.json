@@ -9,10 +9,12 @@
   "naming_series_section",
   "naming_series",
   "category_details_section",
-  "category_name",
-  "category_code",
+  "company",
   "column_break_agvr",
-  "gl_account",
+  "category_code",
+  "category_name",
+  "account_mapping",
+  "expense_category_account",
   "description_section",
   "description"
  ],
@@ -53,12 +55,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "gl_account",
-   "fieldtype": "Link",
-   "label": "GL Account",
-   "options": "Account"
-  },
-  {
    "fieldname": "description_section",
    "fieldtype": "Section Break",
    "label": "Description"
@@ -67,12 +63,29 @@
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "fieldname": "expense_category_account",
+   "fieldtype": "Table",
+   "label": "Expense Category Account ",
+   "options": "Expense Category Account"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "account_mapping",
+   "fieldtype": "Section Break",
+   "label": "Account Mapping"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-07 16:35:48.906834",
+ "modified": "2026-02-09 16:25:59.818778",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Expense Category Master",

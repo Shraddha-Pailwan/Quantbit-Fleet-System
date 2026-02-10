@@ -9,24 +9,32 @@
   "naming_series_section",
   "naming_series",
   "expense_information_section",
+  "company",
   "vehicle",
   "expense_date",
   "expense_category",
-  "odometer_reading",
   "column_break_wluu",
-  "vendor",
+  "posting_date",
+  "driver",
+  "driver_name",
+  "odometer_reading",
+  "description_section",
   "description",
   "amount_and_billing_section",
-  "amount",
+  "account",
   "column_break_vpws",
+  "amount",
+  "column_break_enun",
   "invoice__bill_number",
   "payment_and_approval_section",
+  "payment_account",
   "payment_status",
   "column_break_kpav",
+  "payment_type",
   "approved_by",
-  "remarks_and_attachments_section",
+  "column_break_flpl",
   "remarks",
-  "attachments"
+  "amended_from"
  ],
  "fields": [
   {
@@ -52,14 +60,16 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Vehicle",
-   "options": "Vehicle Master"
+   "options": "Vehicle Master",
+   "reqd": 1
   },
   {
    "default": "Today",
    "fieldname": "expense_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Expense Date"
+   "label": "Expense Date",
+   "reqd": 1
   },
   {
    "fieldname": "expense_category",
@@ -72,17 +82,13 @@
    "fieldname": "odometer_reading",
    "fieldtype": "Float",
    "label": "Odometer Reading",
-   "precision": "2"
+   "non_negative": 1,
+   "precision": "2",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_wluu",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "vendor",
-   "fieldtype": "Link",
-   "label": "Vendor",
-   "options": "Vendor Master"
   },
   {
    "fieldname": "description",
@@ -97,7 +103,6 @@
   {
    "fieldname": "amount",
    "fieldtype": "Currency",
-   "in_list_view": 1,
    "label": "Amount"
   },
   {
@@ -116,9 +121,10 @@
   },
   {
    "fieldname": "payment_status",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Payment Status",
-   "options": "Cash\nUPI\nBank Transfer\nCheque\nCompany Account"
+   "options": "Mode of Payment"
   },
   {
    "fieldname": "column_break_kpav",
@@ -131,25 +137,87 @@
    "options": "User"
   },
   {
-   "fieldname": "remarks_and_attachments_section",
-   "fieldtype": "Section Break",
-   "label": "Remarks and Attachments"
-  },
-  {
    "fieldname": "remarks",
    "fieldtype": "Small Text",
    "label": "Remarks"
   },
   {
-   "fieldname": "attachments",
-   "fieldtype": "Attach",
-   "label": "Attachments"
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "driver.full_name",
+   "fetch_if_empty": 1,
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "label": "Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_enun",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_flpl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_account",
+   "fieldtype": "Link",
+   "label": "Payment Account",
+   "options": "Account"
+  },
+  {
+   "default": "Bank",
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment Type",
+   "options": "Cash\nBank"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vehicle Expense",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2026-02-07 17:38:06.271588",
+ "modified": "2026-02-10 12:26:05.802243",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Vehicle Expense",
@@ -171,8 +239,10 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "search_fields": "expense_category",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "expense_category",
  "track_changes": 1
 }
