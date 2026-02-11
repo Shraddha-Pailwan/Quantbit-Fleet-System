@@ -1,10 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-02-10 21:22:54.026245",
+ "autoname": "naming_series:",
+ "creation": "2026-02-07 18:09:41.055917",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series_section",
+  "naming_series",
   "document_information_section",
   "company",
   "vehicle",
@@ -23,15 +26,22 @@
  ],
  "fields": [
   {
+   "collapsible": 1,
+   "fieldname": "naming_series_section",
+   "fieldtype": "Section Break",
+   "label": "Naming Series"
+  },
+  {
+   "default": "VD-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "VD-.YYYY.-.#####"
+  },
+  {
    "fieldname": "document_information_section",
    "fieldtype": "Section Break",
    "label": "Document Information"
-  },
-  {
-   "fieldname": "company",
-   "fieldtype": "Link",
-   "label": "Company",
-   "options": "Company"
   },
   {
    "fieldname": "vehicle",
@@ -39,10 +49,6 @@
    "in_list_view": 1,
    "label": "Vehicle",
    "options": "Vehicle Master"
-  },
-  {
-   "fieldname": "column_break_ftyf",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "document_type",
@@ -56,13 +62,8 @@
    "label": "Document Number"
   },
   {
-   "fieldname": "column_break_kvtg",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "issue_date",
    "fieldtype": "Date",
-   "in_list_view": 1,
    "label": "Issue Date"
   },
   {
@@ -79,12 +80,7 @@
   {
    "fieldname": "issuing_authority",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Issuing Authority"
-  },
-  {
-   "fieldname": "column_break_iswc",
-   "fieldtype": "Column Break"
   },
   {
    "default": "30",
@@ -105,18 +101,49 @@
    "label": "Status",
    "options": "Valid\nExpired\nPending Renewal",
    "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ftyf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_iswc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_kvtg",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "istable": 1,
  "links": [],
- "modified": "2026-02-10 21:30:14.930870",
+ "modified": "2026-02-10 21:24:13.989692",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
- "name": "Vehicle Document",
+ "name": "Vehicle Document Details",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
- "permissions": [],
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",

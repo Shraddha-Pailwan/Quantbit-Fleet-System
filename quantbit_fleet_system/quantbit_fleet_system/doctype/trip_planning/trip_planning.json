@@ -10,19 +10,19 @@
   "naming_series",
   "trip_planning_details_section",
   "company",
-  "plan_start_date",
+  "requested_by",
   "vehicle",
+  "plan_start_date",
   "plan_status",
   "trip_request",
   "column_break_emon",
   "posting_date",
-  "plan_end_date",
   "driver",
   "driver_name",
+  "plan_end_date",
   "from_department",
   "description_section",
-  "purpose",
-  "amended_from"
+  "purpose"
  ],
  "fields": [
   {
@@ -125,14 +125,11 @@
    "read_only": 1
   },
   {
-   "fieldname": "amended_from",
+   "fieldname": "requested_by",
    "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Trip Planning",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
+   "label": "Requested By",
+   "options": "Employee",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
@@ -145,7 +142,7 @@
    "link_fieldname": "trip_planning"
   }
  ],
- "modified": "2026-02-10 13:47:14.233681",
+ "modified": "2026-02-10 21:05:54.927155",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Trip Planning",

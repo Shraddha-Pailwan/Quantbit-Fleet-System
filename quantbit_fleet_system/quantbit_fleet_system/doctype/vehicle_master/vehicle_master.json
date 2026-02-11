@@ -30,7 +30,10 @@
   "department",
   "column_break_sxkt",
   "status",
-  "branch"
+  "branch",
+  "document_tab",
+  "vehicle_document_details_section",
+  "vehicle_document"
  ],
  "fields": [
   {
@@ -169,12 +172,28 @@
    "fieldtype": "Link",
    "label": "Branch",
    "options": "Branch"
+  },
+  {
+   "fieldname": "vehicle_document_details_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Document Details"
+  },
+  {
+   "fieldname": "vehicle_document",
+   "fieldtype": "Table",
+   "label": "Vehicle Document",
+   "options": "Vehicle Document"
+  },
+  {
+   "fieldname": "document_tab",
+   "fieldtype": "Tab Break",
+   "label": "Document"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-09 16:08:17.695586",
+ "modified": "2026-02-11 10:41:29.077760",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Vehicle Master",

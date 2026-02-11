@@ -26,6 +26,7 @@ function fetch_from_trip_planning(frm) {
             frm.set_value("start_trip_date", plan.plan_start_date);
             frm.set_value("end_trip_date", plan.plan_end_date);
             frm.set_value("trip_request", plan.trip_request);
+            frm.set_value("requested_by", plan.requested_by);
         }
     });
 }

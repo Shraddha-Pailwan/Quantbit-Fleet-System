@@ -10,6 +10,7 @@
   "naming_series",
   "trip_information_section",
   "company",
+  "requested_by",
   "start_trip_date",
   "end_trip_date",
   "trip_planning",
@@ -35,8 +36,7 @@
   "passengers_and_fuel_section",
   "passengers",
   "column_break_apgz",
-  "fuel_consumed_litres",
-  "amended_from"
+  "fuel_consumed_litres"
  ],
  "fields": [
   {
@@ -216,27 +216,24 @@
    "options": "Trip Planning"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Trip Log",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
-  },
-  {
    "fieldname": "trip_request",
    "fieldtype": "Link",
    "label": "Trip Request",
    "options": "Trip Request"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "Requested By",
+   "options": "Employee",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-02-10 13:44:34.515901",
+ "modified": "2026-02-10 21:05:37.811516",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Trip Log",

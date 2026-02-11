@@ -90,3 +90,5 @@ class TripPlanning(Document):
             self.from_department = req.department
         if hasattr(req, "purpose") and req.purpose:
             self.purpose = req.purpose
+        if hasattr(req, "requested_by") and req.requested_by:
+            self.requested_by = req.requested_by

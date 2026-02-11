@@ -42,6 +42,9 @@ class TripLog(Document):
             self.end_trip_date = plan.plan_end_date
         if not self.trip_purpose and hasattr(plan, "purpose"):
             self.trip_purpose = plan.purpose
+        if hasattr(plan, "requested_by") and plan.requested_by:
+            self.requested_by = plan.requested_by
+
 
     def validate_dates(self):
         if self.start_trip_date and self.end_trip_date:

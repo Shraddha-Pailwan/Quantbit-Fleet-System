@@ -1,7 +1,7 @@
 {
  "charts": [],
- "content": "[{\"id\":\"ALiBWChXU2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Quantbit Fleet System</span>\",\"col\":12}},{\"id\":\"DSVI-ZdK3q\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Approved Expenses\",\"col\":3}},{\"id\":\"De8G_llNgl\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Trips\",\"col\":3}},{\"id\":\"ssNVMrI-Ig\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending Claims\",\"col\":3}},{\"id\":\"pxedaI0JuO\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Vehicles\",\"col\":3}},{\"id\":\"ch-y2IM2yD\",\"type\":\"card\",\"data\":{\"card_name\":\"Masters and Setup\",\"col\":4}},{\"id\":\"N3E6CBzSuT\",\"type\":\"card\",\"data\":{\"card_name\":\"Operations\",\"col\":4}},{\"id\":\"ts9bjOEzKv\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports and Registers\",\"col\":4}}]",
- "creation": "2026-02-07 18:24:06.983802",
+ "content": "[{\"id\":\"ALiBWChXU2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Quantbit Fleet System</span>\",\"col\":12}},{\"id\":\"De8G_llNgl\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Trips\",\"col\":3}},{\"id\":\"DSVI-ZdK3q\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Approved Expenses\",\"col\":3}},{\"id\":\"ssNVMrI-Ig\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending Claims\",\"col\":3}},{\"id\":\"pxedaI0JuO\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Vehicles\",\"col\":3}},{\"id\":\"jOeZ63xaX8\",\"type\":\"card\",\"data\":{\"card_name\":\"Master and Setup\",\"col\":3}},{\"id\":\"Nbq13CBtZI\",\"type\":\"card\",\"data\":{\"card_name\":\"Operations \",\"col\":3}},{\"id\":\"KluG-Ww8xq\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports and Registers\",\"col\":3}},{\"id\":\"ArWnphpowF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Planning\",\"col\":3}}]",
+ "creation": "2026-02-11 11:22:26.994953",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
@@ -13,16 +13,6 @@
  "is_hidden": 0,
  "label": "Quantbit Fleet System",
  "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Vehicle Document",
-   "link_count": 0,
-   "link_to": "Vehicle Document",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
   {
    "hidden": 0,
    "is_query_report": 0,
@@ -116,15 +106,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Masters and Setup",
-   "link_count": 7,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Vehicle",
    "link_count": 0,
    "link_to": "Vehicle Master",
@@ -175,6 +156,86 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Vehicle Assignment",
+   "link_count": 0,
+   "link_to": "Vehicle Assignment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Expense",
+   "link_count": 0,
+   "link_to": "Vehicle Expense",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Trip Request",
+   "link_count": 0,
+   "link_to": "Trip Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Trip Planning",
+   "link_count": 0,
+   "link_to": "Trip Planning",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Trip Log",
+   "link_count": 0,
+   "link_to": "Trip Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fuel Entry",
+   "link_count": 0,
+   "link_to": "Fuel Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Maintenance Record",
+   "link_count": 0,
+   "link_to": "Maintenance Record",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance Claim",
+   "link_count": 0,
+   "link_to": "Insurance Claim",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Insurance Policy",
    "link_count": 0,
    "link_to": "Insurance Policy",
@@ -184,18 +245,82 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
-   "label": "Vehicle Document",
+   "is_query_report": 1,
+   "label": "Trip Log Register",
    "link_count": 0,
-   "link_to": "Vehicle Document",
-   "link_type": "DocType",
+   "link_to": "Trip Log Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Vehicle Trip Request Register",
+   "link_count": 0,
+   "link_to": "Vehicle Trip Request Register",
+   "link_type": "Report",
    "onboard": 0,
    "type": "Link"
   },
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Operations",
+   "label": "Vehicle Maintenance Register",
+   "link_count": 0,
+   "link_to": "Vehicle Maintenance Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Maintenance Record",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Insurance Policy Register",
+   "link_count": 0,
+   "link_to": "Vehicle Insurance Policy Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Insurance Policy",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Insurance Claim Register",
+   "link_count": 0,
+   "link_to": "Vehicle Insurance Claim Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Insurance Claim",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Fuel Entry Register",
+   "link_count": 0,
+   "link_to": "Vehicle Fuel Entry Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fuel Entry",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Vehicle Expense Register",
+   "link_count": 0,
+   "link_to": "Vehicle Expense Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Operations ",
    "link_count": 8,
    "link_type": "DocType",
    "onboard": 0,
@@ -254,19 +379,9 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Fuel Entry",
+   "label": "Insurance Policy",
    "link_count": 0,
-   "link_to": "Fuel Entry",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Maintenance Record",
-   "link_count": 0,
-   "link_to": "Maintenance Record",
+   "link_to": "Insurance Policy",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -284,8 +399,18 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Maintenance Record",
+   "link_count": 0,
+   "link_to": "Maintenance Record",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Reports and Registers",
-   "link_count": 2,
+   "link_count": 7,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -293,9 +418,9 @@
   {
    "hidden": 0,
    "is_query_report": 1,
-   "label": "Trip Log Register",
+   "label": "Vehicle Expense Register",
    "link_count": 0,
-   "link_to": "Trip Log Register",
+   "link_to": "Vehicle Expense Register",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
@@ -303,16 +428,130 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Vehicle Expense Register",
+   "label": "Vehicle Fuel Entry Register",
    "link_count": 0,
-   "link_to": "Vehicle Expense Register",
+   "link_to": "Vehicle Fuel Entry Register",
    "link_type": "Report",
    "onboard": 0,
-   "report_ref_doctype": "Vehicle Expense",
+   "report_ref_doctype": "Fuel Entry",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Insurance Policy Register",
+   "link_count": 0,
+   "link_to": "Vehicle Insurance Policy Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Insurance Policy",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Insurance Claim Register",
+   "link_count": 0,
+   "link_to": "Vehicle Insurance Claim Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Insurance Claim",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Maintenance Register",
+   "link_count": 0,
+   "link_to": "Vehicle Maintenance Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Maintenance Record",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Trip Request Register",
+   "link_count": 0,
+   "link_to": "Vehicle Trip Request Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Trip Request",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Trip Log Register",
+   "link_count": 0,
+   "link_to": "Trip Log Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Trip Log",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master and Setup",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle",
+   "link_count": 0,
+   "link_to": "Vehicle Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Driver",
+   "link_count": 0,
+   "link_to": "Driver Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Expense Category Master",
+   "link_count": 0,
+   "link_to": "Expense Category Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance Type Master",
+   "link_count": 0,
+   "link_to": "Insurance Type Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Maintenance Type Master",
+   "link_count": 0,
+   "link_to": "Maintenance Type Master",
+   "link_type": "DocType",
+   "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2026-02-10 14:47:23.805201",
+ "modified": "2026-02-11 11:43:20.181804",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Quantbit Fleet System",
@@ -340,6 +579,15 @@
  "quick_lists": [],
  "roles": [],
  "sequence_id": 35.0,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Trip Planning",
+   "link_to": "Trip Planning",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
  "title": "Quantbit Fleet System"
 }

@@ -256,6 +256,12 @@ app_license = "mit"
 #     # ]
 # }
 
+scheduler_events = {
+    "daily": [
+        "quantbit_fleet_system.scheduler.alerts.daily_alerts"
+    ]
+}
+
 fixtures = [
     {
         "doctype": "Role",
@@ -266,6 +272,21 @@ fixtures = [
                 [
                     "Fleet Manager Admin",
                     "Fleet User",
+                ]
+            ]
+        ]
+    },
+    {
+        "dt": "Number Card",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Approved Expenses",
+                    "Total Vehicles",
+                    "Active Trips",
+                    "Pending Claims"
                 ]
             ]
         ]

@@ -10,15 +10,15 @@
   "naming_series",
   "trip_request_details_section",
   "company",
+  "requested_by",
   "expected_trip_start_date",
   "department",
   "column_break_brzq",
   "posting_date",
-  "expected_trip_end_date",
   "trip_request_status",
+  "expected_trip_end_date",
   "description_section",
-  "purpose",
-  "amended_from"
+  "purpose"
  ],
  "fields": [
   {
@@ -79,6 +79,7 @@
    "reqd": 1
   },
   {
+   "description": "Please Enter Full Name",
    "fieldname": "trip_request_status",
    "fieldtype": "Select",
    "label": "Trip Request Status",
@@ -97,14 +98,12 @@
    "reqd": 1
   },
   {
-   "fieldname": "amended_from",
+   "fieldname": "requested_by",
    "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Trip Request",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
+   "in_list_view": 1,
+   "label": "Requested By",
+   "options": "Employee",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
@@ -116,7 +115,7 @@
    "link_fieldname": "trip_request"
   }
  ],
- "modified": "2026-02-10 12:54:53.980758",
+ "modified": "2026-02-10 21:06:06.027302",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Trip Request",

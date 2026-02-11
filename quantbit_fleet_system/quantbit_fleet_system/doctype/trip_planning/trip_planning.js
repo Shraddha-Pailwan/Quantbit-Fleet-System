@@ -49,6 +49,9 @@ function fetch_from_trip_request(frm) {
             if (req.posting_date) {
                 frm.set_value("posting_date", req.posting_date);
             }
+            if (req.requested_by) {
+                frm.set_value("requested_by", req.requested_by);
+            }
         }
     });
 }
