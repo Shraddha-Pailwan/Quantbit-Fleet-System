@@ -14,6 +14,18 @@ frappe.query_reports["Vehicle Fuel Entry Register"] = {
             label: __("To Date"),
             fieldtype: "Date",
             default: frappe.datetime.month_end()
+        },
+		{
+            fieldname: "vehicle",
+            label: "Vehicle",
+            fieldtype: "Link",
+            options: "Vehicle Master"
+        },
+        {
+            fieldname: "driver",
+            label: "Driver",
+            fieldtype: "Link",
+            options: "Driver Master"
         }
     ]
 };

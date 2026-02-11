@@ -409,91 +409,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Reports and Registers",
-   "link_count": 7,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Vehicle Expense Register",
-   "link_count": 0,
-   "link_to": "Vehicle Expense Register",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Vehicle Fuel Entry Register",
-   "link_count": 0,
-   "link_to": "Vehicle Fuel Entry Register",
-   "link_type": "Report",
-   "onboard": 0,
-   "report_ref_doctype": "Fuel Entry",
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Vehicle Insurance Policy Register",
-   "link_count": 0,
-   "link_to": "Vehicle Insurance Policy Register",
-   "link_type": "Report",
-   "onboard": 0,
-   "report_ref_doctype": "Insurance Policy",
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Vehicle Insurance Claim Register",
-   "link_count": 0,
-   "link_to": "Vehicle Insurance Claim Register",
-   "link_type": "Report",
-   "onboard": 0,
-   "report_ref_doctype": "Insurance Claim",
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Vehicle Maintenance Register",
-   "link_count": 0,
-   "link_to": "Vehicle Maintenance Register",
-   "link_type": "Report",
-   "onboard": 0,
-   "report_ref_doctype": "Maintenance Record",
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Vehicle Trip Request Register",
-   "link_count": 0,
-   "link_to": "Vehicle Trip Request Register",
-   "link_type": "Report",
-   "onboard": 0,
-   "report_ref_doctype": "Trip Request",
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Trip Log Register",
-   "link_count": 0,
-   "link_to": "Trip Log Register",
-   "link_type": "Report",
-   "onboard": 0,
-   "report_ref_doctype": "Trip Log",
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Master and Setup",
    "link_count": 5,
    "link_type": "DocType",
@@ -549,9 +464,88 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports and Registers",
+   "link_count": 7,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Vehicle Expense Register",
+   "link_count": 0,
+   "link_to": "Vehicle Expense Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Vehicle Fuel Entry Register",
+   "link_count": 0,
+   "link_to": "Vehicle Fuel Entry Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Vehicle Insurance Policy Register",
+   "link_count": 0,
+   "link_to": "Vehicle Insurance Policy Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Vehicle Insurance Claim Register",
+   "link_count": 0,
+   "link_to": "Vehicle Insurance Claim Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Vehicle Maintenance Register",
+   "link_count": 0,
+   "link_to": "Vehicle Maintenance Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Vehicle Trip Request Register",
+   "link_count": 0,
+   "link_to": "Vehicle Trip Request Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Trip Log Register",
+   "link_count": 0,
+   "link_to": "Trip Log Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2026-02-11 11:43:20.181804",
+ "modified": "2026-02-11 12:16:19.755630",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Quantbit Fleet System",

@@ -7,19 +7,25 @@ frappe.query_reports["Vehicle Maintenance Register"] = {
             fieldname: "from_date",
             label: __("From Date"),
             fieldtype: "Date",
-            reqd: 1
+            default: frappe.datetime.month_start()
         },
         {
             fieldname: "to_date",
             label: __("To Date"),
             fieldtype: "Date",
-            reqd: 1
+            default: frappe.datetime.month_end()
         },
         {
             fieldname: "vehicle",
             label: __("Vehicle"),
             fieldtype: "Link",
             options: "Vehicle Master"
+        },
+		{
+            fieldname: "status",
+            label: __("Status"),
+            fieldtype: "Select",
+            options: "Scheduled\nIn Progress\nCompleted"
         }
     ]
 };

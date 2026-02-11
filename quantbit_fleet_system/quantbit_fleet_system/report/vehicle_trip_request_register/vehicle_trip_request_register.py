@@ -32,6 +32,12 @@ def get_columns():
             "width": 160
         },
         {
+            "label": "Requested By Name",
+            "fieldname": "requested_byname",
+            "fieldtype": "Data",
+            "width": 160
+        },
+        {
             "label": "Department",
             "fieldname": "department",
             "fieldtype": "Link",
@@ -84,6 +90,7 @@ def get_data(filters):
             tr.name,
             tr.company,
             tr.requested_by,
+            tr.requested_byname,
             tr.department,
             tr.trip_request_status,
             tr.expected_trip_start_date,

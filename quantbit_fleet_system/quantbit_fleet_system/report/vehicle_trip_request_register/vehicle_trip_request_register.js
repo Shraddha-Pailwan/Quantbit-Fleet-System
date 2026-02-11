@@ -12,6 +12,18 @@ frappe.query_reports["Vehicle Trip Request Register"] = {
             fieldname: "to_date",
             label: __("To Date"),
             fieldtype: "Date"
+        },
+        {
+            fieldname: "department",
+            label: "Department",
+            fieldtype: "Link",
+            options: "Department"
+        },
+        {
+            fieldname: "requested_by",
+            label: "Requested By",
+            fieldtype: "Link",
+            options: "Employee"
         }
     ]
 };

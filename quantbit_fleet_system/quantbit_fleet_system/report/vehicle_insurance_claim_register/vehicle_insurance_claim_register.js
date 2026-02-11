@@ -12,6 +12,24 @@ frappe.query_reports["Vehicle Insurance Claim Register"] = {
             fieldname: "to_date",
             label: __("To Date"),
             fieldtype: "Date"
+        },
+		{
+            fieldname: "vehicle",
+            label: "Vehicle",
+            fieldtype: "Link",
+            options: "Vehicle Master"
+        },
+		{
+            fieldname: "driver",
+            label: "Driver",
+            fieldtype: "Link",
+            options: "Driver Master"
+        },
+        {
+            fieldname: "policy",
+            label: "Policy",
+            fieldtype: "Link",
+            options: "Insurance Policy"
         }
     ]
 };

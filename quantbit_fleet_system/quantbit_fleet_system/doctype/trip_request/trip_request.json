@@ -15,10 +15,12 @@
   "department",
   "column_break_brzq",
   "posting_date",
-  "trip_request_status",
+  "requested_byname",
   "expected_trip_end_date",
+  "trip_request_status",
   "description_section",
-  "purpose"
+  "purpose",
+  "amended_from"
  ],
  "fields": [
   {
@@ -102,8 +104,23 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Requested By",
-   "options": "Employee",
-   "reqd": 1
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "requested_by.employee_name",
+   "fieldname": "requested_byname",
+   "fieldtype": "Data",
+   "label": "Requested By(Name)"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Trip Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
@@ -115,7 +132,7 @@
    "link_fieldname": "trip_request"
   }
  ],
- "modified": "2026-02-10 21:06:06.027302",
+ "modified": "2026-02-11 12:07:29.663230",
  "modified_by": "Administrator",
  "module": "Quantbit Fleet System",
  "name": "Trip Request",

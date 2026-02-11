@@ -46,6 +46,12 @@ def get_columns():
             "width": 140
         },
         {
+            "label": "Driver Name",
+            "fieldname": "driver_name",
+            "fieldtype": "Data",
+            "width": 140
+        },
+        {
             "label": "Incident Date",
             "fieldname": "incident_date",
             "fieldtype": "Date",
@@ -105,6 +111,7 @@ def get_data(filters):
             ic.policy,
             ic.vehicle,
             ic.driver,
+            ic.driver_name,
             ic.incident_date,
             ic.claim_date,
             ic.claim_type,

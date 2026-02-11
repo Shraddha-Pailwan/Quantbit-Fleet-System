@@ -14,7 +14,17 @@ frappe.query_reports["Vehicle Insurance Policy Register"] = {
             label: __("To Date"),
             fieldtype: "Date",
             reqd: 0
+        },
+		{
+            fieldname: "vehicle",
+            label: "Vehicle",
+            fieldtype: "Link",
+            options: "Vehicle Master"
+        },
+        {
+            fieldname: "policy_number",
+            label: "Policy Number",
+            fieldtype: "Data"
         }
-
     ]
 };
